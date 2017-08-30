@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html style=''>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Compute SHA256 cryptographic hash over the HTML source for current page.">
+    <meta name="author" content="Aditya Patil">
+    
+    <title>HTML Hash Generator</title>
+    
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/jssha256.js"></script>
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Cascading Style Sheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">
+
+  </head>
+  
+  <body style="width:100%;">
+    <section>
+      <h2 align="center">HTML Hash Generator</h2>
+      <br>
+      <table class="table table-no-hover" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <font size="4px">
+                <div id='message'>Computing hash....</div>
+            </font>
+          </tr>
+          <tr><td></td></tr>
+          <tr>
+            <td colspan="2" align="center">
+              <button type="button" id="refreshHash" class="btn btn-primary btn-lg btn-block">Recompute hash!</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn btn-secondary btn-lg btn-block" id="copyHash">Copy hash to clipboard</button>
+            </td>
+            <td>
+              <button type="button" class="btn btn-secondary btn-lg btn-block" id="copySource">Copy source to clipboard</button>
+            </td>
+          </tr>
+          <tr>
+            
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>

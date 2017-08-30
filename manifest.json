@@ -1,0 +1,11 @@
+{
+  "name": "HTML Hash Generator",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Compute SHA256 cryptographic hash over the HTML source for current page.",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs", "<all_urls>"]
+}
